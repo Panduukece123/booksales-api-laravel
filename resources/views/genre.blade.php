@@ -16,10 +16,10 @@
     <div class="container py-5">
         <h1 class="text-center mb-5">Daftar Genre</h1>
 
-        @foreach ($genreData as $item)
+        @foreach ($genres as $item)
             <div class="card mb-4 shadow-sm">
                 <div class="card-body">
-                    <h2 class="pb-2 border-bottom">{{ $item['nama'] }}</h2>
+                    <h2 class="pb-2 border-bottom">{{ $item['name'] }}</h2>
 
                     <div class="row py-3">
                         <div class="col d-flex align-items-start">
@@ -28,7 +28,7 @@
                             </svg>
                             <div>
                                 <h3 class="fw-bold mb-1 fs-5 text-body-emphasis">Deskripsi</h3>
-                                <p class="mb-0">{{ $item['description'] }}</p>
+                                <p class="mb-0">{{ $item['descriptions'] }}</p>
                             </div>
                         </div>
                     </div>

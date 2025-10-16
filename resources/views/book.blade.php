@@ -27,7 +27,7 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                    @foreach ($bookData as $item)
+                    @foreach ($books as $item)
                         <div class="col">
                             <div class="card shadow-sm h-100">
                                 <img src="{{ $item['image'] }}" class="bd-placeholder-img card-img-top"

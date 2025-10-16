@@ -16,7 +16,7 @@
     <div class="container py-5">
         <h1 class="text-center mb-5">Daftar Penulis</h1>
 
-        @foreach ($authorData as $item)
+        @foreach ($authors as $item)
             <div class="card mb-5 shadow-sm">
                 <div class="card-body">
                     <h2 class="pb-2 border-bottom">{{ $item['name'] }}</h2>

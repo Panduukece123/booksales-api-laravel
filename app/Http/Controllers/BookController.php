@@ -9,10 +9,13 @@ class BookController extends Controller
 {
     public function index()
     {
-        $data = new Book();
+        $books = Book::all();
 
-        $Book = $data->getBooks();
+        return view('book', ['books'=> $books]);
+        // $data = new Book();
 
-        return view('book', ['bookData'=> $Book]);
+        // $Book = $data->getBooks();
+
+        // return view('book', ['bookData'=> $Book]);
     }
 }
