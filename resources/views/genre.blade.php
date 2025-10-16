@@ -28,7 +28,7 @@
                             </svg>
                             <div>
                                 <h3 class="fw-bold mb-1 fs-5 text-body-emphasis">Deskripsi</h3>
-                                <p class="mb-0">{{ $item['descriptions'] }}</p>
+                                <p class="mb-0">{{ $item['description'] }}</p>
                             </div>
                         </div>
                     </div>

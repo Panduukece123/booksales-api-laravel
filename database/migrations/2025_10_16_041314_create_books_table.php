@@ -17,10 +17,16 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('author');
-            $table->string('genre');
-            $table->string('description');
-            $table->string("image");
+            $table->text('description');
+            $table->decimal('price', 10, 2);
+            $table->integer('stock');
+            $table->string('cover_photo');
+            $table->foreignId('genre_id')
+                ->constrained('genres')
+                ->onDelete('cascade');
+            $table->foreignId('author_id')
+                ->constrained('authors')
+                ->onDelete('cascade');
         });
     }
 

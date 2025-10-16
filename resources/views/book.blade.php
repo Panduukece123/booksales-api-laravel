@@ -30,14 +30,16 @@
                     @foreach ($books as $item)
                         <div class="col">
                             <div class="card shadow-sm h-100">
-                                <img src="{{ $item['image'] }}" class="bd-placeholder-img card-img-top"
+                                <img src="{{ $item['cover_photo'] }}" class="bd-placeholder-img card-img-top"
                                     alt="{{ $item['title'] }}" width="100%" height="225" style="object-fit:fill;">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $item['title'] }}</h5>
                                     <p class="card-text">
-                                        <strong>Author:</strong> {{ $item['author'] }} <br>
-                                        <strong>Genre:</strong> {{ $item['genre'] }} <br>
-                                        <strong>Description:</strong> {{ $item['description'] }}
+                                        <strong>Author:</strong> {{ $item['author_id'] }} <br>
+                                        <strong>Genre:</strong> {{ $item['genre_id'] }} <br>
+                                        <strong>Description:</strong> {{ $item['description'] }} <br>
+                                        <strong>Price:</strong> ${{ $item['price'] }} <br>
+                                        <strong>Stock:</strong> {{ $item['stock'] }} <br>
                                     </p>
                                     <div class="mt-auto">
                                         <a href="#" class="btn btn-sm btn-outline-primary">Detail</a>

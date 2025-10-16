@@ -37,18 +37,8 @@
                                 <use xlink:href="#calendar3"></use>
                             </svg>
                             <div>
-                                <h3 class="fw-bold mb-0 fs-5 text-body-emphasis">Age</h3>
-                                <p>{{ $item['age'] }}</p>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex align-items-start">
-                            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-                                <use xlink:href="#flag"></use>
-                            </svg>
-                            <div>
-                                <h3 class="fw-bold mb-0 fs-5 text-body-emphasis">Flag</h3>
-                                <p>{{ $item['flag'] }}</p>
+                                <h3 class="fw-bold mb-0 fs-5 text-body-emphasis">Photo</h3>
+                                <img src="{{ $item['photo'] }}" alt="photo" width="200px">
                             </div>
                         </div>
                     </div>

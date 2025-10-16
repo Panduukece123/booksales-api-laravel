@@ -15,17 +15,30 @@ class GenreSeeder extends Seeder
     {
         Genre::create([
             'name'=>'Action',
-            'descriptions'=> 'Genre yang menampilkan banyak adegan pertarungan, kejar-kejaran, dan ketegangan.'
+            'description'=> 'Genre yang menampilkan banyak adegan pertarungan, kejar-kejaran, dan ketegangan.'
         ]);
 
         Genre::create([
             "name"=> "Mystery",
-            "descriptions"=> "Genre yang menampilkan kisah teka-teki atau kejahatan yang perlu dipecahkan, biasanya dengan tokoh detektif atau penyelidik sebagai karakter utama."
+            "description"=> "Genre yang menampilkan kisah teka-teki atau kejahatan yang perlu dipecahkan, biasanya dengan tokoh detektif atau penyelidik sebagai karakter utama."
         ]);
 
         Genre::create([
             "name"=>"Fiction",
-            "descriptions" => "Karya sastra yang berisi cerita imajinatif dan tidak sepenuhnya berdasarkan fakta."
+            "description" => "Karya sastra yang berisi cerita imajinatif dan tidak sepenuhnya berdasarkan fakta."
         ]);
+
+        Genre::create([
+            "name"=>"Fantasy",
+            "description" => "Genre yang menampilkan elemen-elemen magis, makhluk mitos, dan dunia imajinatif yang berbeda dari dunia nyata."
+
+        ]);
+        Genre::create([
+            "name"=>"Horror",
+            "description" => "Genre yang dirancang untuk menimbulkan rasa takut, cemas, atau ketegangan pada pembaca atau penonton."
+        ]);
+        
+
+
     }
 }
